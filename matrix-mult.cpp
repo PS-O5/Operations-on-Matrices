@@ -22,7 +22,7 @@ void matrixEntry()
 	std::cin >> colA;
 	std::cout << "Enter the rows of matrix B:" << std::endl;
 	std::cin >> rowB;
-	std::cout << "Enter the colums of matrix B:" << std::endl;
+	std::cout << "Enter the columns of matrix B:" << std::endl;
 	std::cin >> colB;
 	for(int i = 0; i < rowA; i++)
 	{
@@ -43,7 +43,7 @@ void matrixEntry()
 	matrixPrinter(matA, rowA, colA);
 	matrixPrinter(matB, rowB, colB);
 	std::cout << "What operations would you like to perform on A & B" << std::endl;
-	std::cout << "Addition(0), Substraction(1), Multiplication(2)" << std::endl;
+	std::cout << "Addition(0), Subtraction(1), Multiplication(2)" << std::endl;
 	int buff;
 	std::cin >> buff;
 	if(buff == 2)
@@ -92,4 +92,3 @@ void matrixMultiplier(double mat1[10][10], int row1, int col1, double mat2[10][1
 	std::cout << "Product of A & B :" << std::endl;
 	matrixPrinter(product, row1, col2);
 }
-
